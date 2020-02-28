@@ -2,3 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.form-container {
+    display: inline-block;
+}
+
+
+.form-control {
+    width: 250px;
+    text-align: center;
+}
+label[for="cocktail_name"] {
+    font-size: 35px;
+    font-family: 'Dancing Script';
+}
+
+.title {
+    font-family: 'Dancing Script';
+    font-size: 45px;
+}
+
+.title-one {
+    font-family: 'Dancing Script';
+    font-size: 30px;
+}
+
+a {
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+
+.container-dose {
+    display: inline-block;
+}
+
+label[for="dose_description"] {
+    font-family: 'Dancing Script';
+}
+
+label[for="dose_ingredient_id"] {
+    font-family: 'Dancing Script';
+}
