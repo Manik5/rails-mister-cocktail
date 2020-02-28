@@ -1,11 +1,16 @@
 
-<div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-        <div class="card-product-infos">
-            <h2><%= @cocktail.name %></h2>
-            <p>Product description with <strong>relevant info</strong> only.</p>
+<div class="flip">
+    <div class="front" style="background-image: url(https://source.unsplash.com/<%= rand(1400..1600) %>x900/?cocktail)">
+        <h1 class= "text-shadow"><%= @cocktail.name %></h1>
         </div>
+          <div class="back">
+       <h2>Nice Choice!</h2>
+       <p>Don't get drunk</p>
+    </div>
 </div>
+       
+
+
 
 <% @cocktail.doses.each do |dose| %>
 
@@ -25,5 +30,6 @@
 
 <%= link_to "Add new doses", new_cocktail_dose_path(@cocktail)  %>
 
-    
 
+
+    

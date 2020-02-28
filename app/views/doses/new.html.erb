@@ -2,12 +2,22 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="description-container">
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-  </div>
+
+
+<div class="wrapper">
+	<div class="container">
+        <h2><%= f.input :description %></h2>
+        <h2><%= f.association :ingredient %></h2>
+    	<form class="form">
+		</form>
+	</div>
+  
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
 <% end %>
+
+
+		
+	
